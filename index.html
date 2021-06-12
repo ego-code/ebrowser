@@ -1,0 +1,47 @@
+<html>
+
+<head>
+<title>EGOCODE-轻量浏览器</title>
+<script language="JavaScript">
+<!--
+function FP_swapImg() {//v1.0
+ var doc=document,args=arguments,elm,n; doc.$imgSwaps=new Array(); for(n=2; n<args.length;
+ n+=2) { elm=FP_getObjectByID(args[n]); if(elm) { doc.$imgSwaps[doc.$imgSwaps.length]=elm;
+ elm.$src=elm.src; elm.src=args[n+1]; } }
+}
+
+function FP_preloadImgs() {//v1.0
+ var d=document,a=arguments; if(!d.FP_imgs) d.FP_imgs=new Array();
+ for(var i=0; i<a.length; i++) { d.FP_imgs[i]=new Image; d.FP_imgs[i].src=a[i]; }
+}
+
+function FP_getObjectByID(id,o) {//v1.0
+ var c,el,els,f,m,n; if(!o)o=document; if(o.getElementById) el=o.getElementById(id);
+ else if(o.layers) c=o.layers; else if(o.all) el=o.all[id]; if(el) return el;
+ if(o.id==id || o.name==id) return o; if(o.childNodes) c=o.childNodes; if(c)
+ for(n=0; n<c.length; n++) { el=FP_getObjectByID(id,c[n]); if(el) return el; }
+ f=o.forms; if(f) for(n=0; n<f.length; n++) { els=f[n].elements;
+ for(m=0; m<els.length; m++){ el=FP_getObjectByID(id,els[n]); if(el) return el; } }
+ return null;
+}
+// -->
+</script>
+</head>
+
+<body background="下载/9857e6a3f6eb3b38b06b43d5274eabc1.jpeg" onload="FP_preloadImgs(/*url*/'htmlimg/button5.jpg',/*url*/'htmlimg/button6.jpg',/*url*/'htmlimg/button8.jpg',/*url*/'htmlimg/button9.jpg')">
+
+<h1 align="center">　</h1>
+<h1 align="center">　</h1>
+<h1 align="center"><font face="Impact" size="7" color="#FFFFFF">EGOCODE</font></h1>
+<h1 align="center"><font face="华文琥珀" color="#FFFFFF">轻量浏览器</font></h1>
+<p align="center"><a href="https://gitee.com/egoeyuyan/easy_browser">
+<img border="0" id="img1" src="htmlimg/button4.jpg" height="20" width="100" alt="GITEE仓库首页" onmouseover="FP_swapImg(1,0,/*id*/'img1',/*url*/'htmlimg/button5.jpg')" onmouseout="FP_swapImg(0,0,/*id*/'img1',/*url*/'htmlimg/button4.jpg')" onmousedown="FP_swapImg(1,0,/*id*/'img1',/*url*/'htmlimg/button6.jpg')" onmouseup="FP_swapImg(0,0,/*id*/'img1',/*url*/'htmlimg/button5.jpg')" fp-style="fp-btn: Border Bottom 1; fp-font: SimSun-ExtB" fp-title="GITEE仓库首页"></a>
+<a href="https://gitee.com/egoeyuyan/easy_browser/attach_files/736081/download/%25E8%25BD%25BB%25E9%2587%258F%25E6%25B5%258F%25E8%25A7%2588%25E5%2599%25A8_1.1.apk">
+<img border="0" id="img2" src="htmlimg/button7.jpg" height="20" width="100" alt="立即下载apk" onmouseover="FP_swapImg(1,0,/*id*/'img2',/*url*/'htmlimg/button8.jpg')" onmouseout="FP_swapImg(0,0,/*id*/'img2',/*url*/'htmlimg/button7.jpg')" onmousedown="FP_swapImg(1,0,/*id*/'img2',/*url*/'htmlimg/button9.jpg')" onmouseup="FP_swapImg(0,0,/*id*/'img2',/*url*/'htmlimg/button8.jpg')" fp-style="fp-btn: Border Bottom 1; fp-font: SimSun-ExtB" fp-title="立即下载apk"></a></p>
+<p align="center"><font color="#FFFFFF" face="华文楷体">新一代浏览器，简洁，基本功能都可以实现，大小仅1mb。</font></p>
+<p align="center"><font color="#FFFFFF" face="华文楷体">BY EGOCODE 2021.</font></p>
+<p align="center">　</p>
+
+</body>
+
+</html>
